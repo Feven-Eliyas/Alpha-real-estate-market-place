@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                <img src="AlphaHomes/logo.png" alt="Alpha Realstate market place's logo" width="5%" height="10%"
+                    class="logo">
+                <h1>Alpha</h1>
+                <!-- SIGN IN -->
+
+    <div id="auth">
+
+        <div>
+
+            <h2>
+                Welcome
+            </h2>
+
+
+            <div>
+
+                <label>
+                    Email
+                </label>
+
+                <input type="email" placeholder="you@example.com">
+
+            </div>
+
+
+            <br>
+
+
+            <div>
+
+                <label>
+                    Password
+                </label>
+
+                <input type="password" placeholder="••••••••">
+
+            </div>
+
+
+            <br>
+
+
+            <button>
+                Sign in
+            </button>
+
+
+            <p>
+                New user?
+                <b>
+                    Create an account
+                </b>
+            </p>
+
+        </div>
+
+    </div>
+
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="seller.html">Sell</a></li>
+                <li><a href="buyer.html">Buy</a></li>
+                <li><a href="message.html">Message</a></li>
+                <li><button id="themeBtn" class="theme-btn" type="button" aria-label="Toggle dark mode">
+            🌙
+        </button></li>
+
+            </ul>
+            <button class="menu-btn" id="menuBtn">☰</button>
+            
+            
+
+            <!-- SETTINGS -->
+
+    <main id="settings" class="view">
+
+        <section class="section">
+
+            <h2>
+                Settings
+            </h2>
+
+            <p>
+                Manage your account and marketplace preferences.
+            </p>
+
+
+            <div class="panel">
+
+                <h3>
+                    Account
+                </h3>
+
+
+                <div class="field">
+
+                    <label>
+                        Full name
+                    </label>
+
+                    <input type="text" placeholder="Your name">
+
+                </div>
+
+
+                <br>
+
+
+                <div class="field">
+
+                    <label>
+                        Email
+                    </label>
+
+                    <input type="email" placeholder="you@example.com">
+
+                </div>
+
+
+                <br>
+
+
+                <div class="field">
+
+                    <label for="notification-preference">
+                        Notifications
+                    </label>
+
+                    <select id="notification-preference">
+
+                        <option>
+                            All notifications
+                        </option>
+
+                        <option>
+                            Important updates only
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <br>
+
+                <button>
+                    Save settings
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+        </nav>
+
+        <div class="topic">
+            <img src="AlphaHomes/logo.png" alt="Alpha Realstate market place's logo" width="20%" height="20%"
+                class="logo">
+            <h1>Real estate marketplace</h1>
+
+
+            <p>
+                Find a place that feels like yours.
+            </p>
+        </div>
+    </header>
+    
+    <main id="buyer" class="view active">
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p>
+                    Search homes by location, compare properties,
+                    save photos, request viewings and message sellers
+                    before meeting in person.
+                </p>
+
+
+                <div class="search">
+
+                    <input id="q" placeholder="Search house, apartment, city or neighborhood">
+
+                    <select id="type" aria-label="Property type">
+
+                        <option value="all">
+                            All property types
+                        </option>
+
+                        <option>
+                            House
+                        </option>
+
+                        <option>
+                            Apartment
+                        </option>
+
+                        <option>
+                            Villa
+                        </option>
+
+                    </select>
+
+                    <button>
+                        Search
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="section">
+
+            <div class="head">
+
+                <div>
+
+                    <h2>
+                        Featured properties
+                    </h2>
+
+                    <p>
+                        Modern homes and apartments ready to explore.
+                    </p>
+
+                </div>
+
+                <button>
+                    ♡ Favorites
+                </button>
+
+            </div>
+
+
+            <div id="cards" class="grid">
+
+                    <section class="contents">
+
+                <article class="card">
+
+                    <div class="photo">
+
+                        <img src="AlphaHomes/image1.jpg" alt="Modern apartment" width="100%" height="100%">
+
+                        <span class="badge">
+                            Apartment
+                        </span>
+
+                        <button class="heart">
+                            ♡
+                        </button>
+
+                    </div>
+
+
+                    <div class="body">
+
+                        <div class="price">
+                            6,000,000 Birr
+                        </div>
+
+                        <h3>
+                            Modern 3-Bedroom Apartment
+                        </h3>
+
+                        <div class="location">
+                            📍 Bole, Addis Ababa
+                        </div>
+
+                        <div class="meta">
+
+                            <span>
+                                🛏 3 bedrooms
+                            </span>
+
+                            <span>
+                                🛁 2 bathrooms
+                            </span>
+
+                            <span>
+                                ▦ 142 m²
+                            </span>
+
+                        </div>
+
+
+                        <div class="actions">
+                         <button>
+                                View details
+                            </button>
+
+                            <button>
+                                Compare
+                            </button>
+
+                        </div>
+
+
+                        <div class="stats">
+
+                            <span>
+                                ◉ 438 views
+                            </span>
+
+                            <span>
+                                ♥️ 31 favorites
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                
+                <article class="card">
+
+                    <div class="photo">
+
+                        <img src="AlphaHomes/image2.jpg" alt="Family house" width="100%" height="100%">
+
+                        <span class="badge">
+                            House
+                        </span>
+
+                        <button class="heart">
+                            ♡
+                        </button>
+
+                    </div>
+
+
+                    <div class="body">
+
+                        <div class="price">
+                            36,000,000 Birr
+                        </div>
+
+                        <h3>
+                            Family House with Garden
+                        </h3>
+
+                        <div class="location">
+                            📍 Summit, Addis Ababa
+                        </div>
+
+                        <div class="meta">
+
+                            <span>
+                                🛏 4 bedrooms
+                            </span>
+
+                            <span>
+                                🛁 3 bathrooms
+                            </span>
+
+                            <span>
+                                ▦ 245 m²
+                            </span>
+
+                        </div>
+
+
+                        <div class="actions">
+
+                            <button>
+                                View details
+                            </button>
+
+                            <button>
+                                Compare
+                            </button>
+
+                        </div>
+
+
+                        <div class="stats">
+
+                            <span>
+                                ◉ 271 views
+                            </span>
+
+                            <span>
+                                ♥️ 18 favorites
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+
+                <article class="card">
+
+                    <div class="photo">
+
+                        <img src="AlphaHomes/image13.jpg" alt="Modern villa" width="100%" height="100%">
+
+                        <span class="badge">
+                            Villa
+                        </span>
+
+                        <button class="heart">
+                            ♡
+                        </button>
+
+                    </div>
+
+
+                    <div class="body">
+
+                        <div class="price">
+                            32,000,000 birr
+                        </div>
+
+                        <h3>
+                            Villa
+                        </h3>
+
+                        <div class="location">
+                            📍 CMC, Addis Ababa
+                        </div>
+                        <div class="meta">
+
+                            <span>
+                                🛏 4 bedrooms
+                            </span>
+
+                            <span>
+                                🛁 3 bathrooms
+                            </span>
+
+                            <span>
+                                ▦ 310 m²
+                            </span>
+
+                        </div>
+
+
+                        <div class="actions">
+
+                            <button>
+                                View details
+                            </button>
+                            <button>
+                                Compare
+                            </button>
+
+                        </div>
+
+
+                        <div class="stats">
+
+                            <span>
+                                ◉ 312 views
+                            </span>
+
+                            <span>
+                                ♥️ 24 favorites
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                        <article class="card">
+
+                    <div class="photo">
+
+                        <img src="AlphaHomes/image6.jpg" alt="Modern villa" width="100%" height="100%">
+
+                        <span class="badge">
+                            G+1
+                        </span>
+
+                        <button class="heart">
+                            ♡
+                        </button>
+
+                    </div>
+
+
+                    <div class="body">
+
+                        <div class="price">
+                            50,000,000 birr
+                        </div>
+
+                        <h3>
+                            Modern G+1 
+                        </h3>
+
+                        <div class="location">
+                            📍 Piyasa, Addis Ababa
+                        </div>
+                        <div class="meta">
+
+                            <span>
+                                🛏 6 bedrooms
+                            </span>
+
+                            <span>
+                                🛁 5 bathrooms
+                            </span>
+
+                            <span>
+                                ▦ 310 m²
+                            </span>
+
+                        </div>
+
+
+                        <div class="actions">
+
+                            <button>
+                                View details
+                            </button>
+                            <button>
+                                Compare
+                            </button>
+
+                        </div>
+
+
+                        <div class="stats">
+
+                            <span>
+                                ◉ 312 views
+                            </span>
+
+                            <span>
+                                ♥️ 24 favorites
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                <article class="card">
+
+                    <div class="photo">
+
+                        <img src="AlphaHomes/image15.jpg" alt="Modern apartment" width="100%" height="100%">
+
+                        <span class="badge">
+                            Apartment
+                        </span>
+
+                        <button class="heart">
+                            ♡
+                        </button>
+
+                    </div>
+
+
+                    <div class="body">
+
+                        <div class="price">
+                            18,000,000 birr
+                        </div>
+
+                        <h3>
+                            Modern 4-Bedroom Apartment
+                        </h3>
+
+                        <div class="location">
+                            📍 Ayat, Addis Ababa
+                        </div>
+
+                        <div class="meta">
+
+                            <span>
+                                🛏 4 bedrooms
+                            </span>
+
+                            <span>
+                                🛁 2 bathrooms
+                            </span>
+
+                            <span>
+                                ▦ 142 m²
+                            </span>
+
+                        </div>
+
+
+                        <div class="actions">
+                         <button>
+                                View details
+                            </button>
+
+                            <button>
+                                Compare
+                            </button>
+
+                        </div>
+
+
+                        <div class="stats">
+
+                            <span>
+                                ◉ 338 views
+                            </span>
+
+                            <span>
+                                ♥️ 31 favorites
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="card">
+
+                    <div class="photo">
+
+                        <img src="AlphaHomes/image9.jpg" alt="Modern apartment" width="100%" height="100%">
+
+                        <span class="badge">
+                            Apartment
+                        </span>
+
+                        <button class="heart">
+                            ♡
+                        </button>
+
+                    </div>
+
+
+                    <div class="body">
+
+                        <div class="price">
+                            10,000,000 Birr >
+                        </div>
+
+                        <h3>
+                            Modern Apartment
+                        </h3>
+
+                        <div class="location">
+                            📍 Kasanchis, Addis Ababa
+                        </div>
+
+                        <div class="meta">
+
+                            <span>
+                                up to 4 bedrooms
+                            </span>
+
+                            <span>
+                                max 5 bathrooms
+                            </span>
+
+                            <span>
+                               ▦ As your choice
+                            </span>
+
+                        </div>
+
+
+                        <div class="actions">
+                         <button>
+                                View details
+                            </button>
+
+                            <button>
+                                Compare
+                            </button>
+
+                        </div>
+
+
+                        <div class="stats">
+
+                            <span>
+                                ◉ 530 views
+                            </span>
+
+                            <span>
+                                ♥️ 31 favorites
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="card">
+
+                    <div class="photo">
+
+                        <img src="AlphaHomes/image14.jpg" alt="Modern apartment" width="100%" height="100%">
+
+                        <span class="badge">
+                            House
+                        </span>
+
+                        <button class="heart">
+                            ♡
+                        </button>
+
+                    </div>
+
+
+                    <div class="body">
+
+                        <div class="price">
+                            25,000,000 Birr
+                        </div>
+
+                        <h3>
+                            Modern House
+                        </h3>
+
+                        <div class="location">
+                            📍 22, Addis Ababa
+                        </div>
+
+                        <div class="meta">
+
+                            <span>
+                                 4 bedrooms
+                            </span>
+
+                            <span>
+                                 5 bathrooms
+                            </span>
+
+                            <span>
+                                ▦ 250 m²
+                            </span>
+
+                        </div>
+
+
+                        <div class="actions">
+                         <button>
+                                View details
+                            </button>
+
+                            <button>
+                                Compare
+                            </button>
+
+                        </div>
+
+
+                        <div class="stats">
+
+                            <span>
+                                ◉ 630 views
+                            </span>
+
+                            <span>
+                                ♥️ 31 favorites
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+<!-- MESSAGES -->
+
+    <main id="messages" class="view">
+
+        <section class="section">
+
+            <div class="head">
+
+                <div>
+                    [9/13/2026 4:49 AM] Feven: <h2>
+                        Messages
+                    </h2>
+
+                    <p>
+                        Talk with sellers or buyers before meeting in person.
+                    </p>
+
+                </div>
+
+            </div>
+
+<!-- COMPARE BAR -->
+
+    <div id="comparebar">
+
+        <span id="compareNum">
+            0
+        </span>
+
+        selected
+
+        <button>
+            Compare
+        </button>
+
+        <button>
+            Clear
+        </button>
+
+    </div>
+
+
+<!-- FAVORITES -->
+
+    <main>
+
+        <section>
+
+            <div>
+
+                <div>
+
+                    <h2>
+                        Saved homes
+                    </h2>
+
+                    <p>
+                        Your favorites and saved property photos.
+                    </p>
+
+                </div>
+
+                <button>
+                    ← Browse
+                </button>
+
+            </div>
+
+
+            <div>
+
+            </div>
+
+        </section>
+
+
+        <section>
+
+            <h2>
+                Photo gallery
+            </h2>
+
+            <p>
+                Photos saved from property listings.
+            </p>
+
+            <div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <b>
+            Alpha
+        </b>
+
+        <span>
+            Buy · Sell · Compare · Message
+        </span>
+
+        <span>
+            © 2026 Alpha Realstate market place. All Rights Reserved
+        </span>
+
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
