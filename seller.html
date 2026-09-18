@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sell</title>
+<link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+<nav class="navbar">
+<div class="logo">
+<img alt="Alpha Realstate market place's logo" class="logo" height="10%" src="AlphaHomes/logo.png" width="5%"/>
+<h1>Alpha</h1>
+</div>
+<ul class="nav-links" id="navLinks">
+<li><a href="index.html">Home</a></li>
+<li><a href="seller.html">Sell</a></li>
+<li><a href="buyer.html">Buy</a></li>
+<li><a href="message.html">Message</a></li>
+<li class="auth-nav-item"><button class="nav-action" id="signInNavBtn" type="button">Sign in</button></li><li class="signup-nav-item"><button class="nav-action" id="signUpNavBtn" type="button">Sign up</button></li><li class="settings-nav-item"><button class="nav-action" id="settingsNavBtn" type="button">Settings</button></li><li><button aria-label="Toggle dark mode" class="theme-btn" id="themeBtn" type="button">
+            🌙
+        </button></li>
+</ul>
+<button class="menu-btn" id="menuBtn">☰</button>
+<!-- SETTINGS -->
+
+</nav>
+<div class="topic">
+<img alt="Alpha Realstate market place's logo" class="logo" height="20%" src="AlphaHomes/logo.png" width="20%"/>
+<h1>Real estate marketplace</h1>
+<p>
+                Find a place that feels like yours.
+            </p>
+</div>
+</header>
+<!-- SELLER DASHBOARD -->
+<main class="view" id="seller">
+<div class="dashboard">
+<div class="head">
+<div>
+<h1>
+                        Seller dashboard
+                    </h1>
+<p>
+                        Manage your properties, pricing, locations,
+                        photos and buyer activity.
+                    </p>
+</div>
+<button>
+                    ＋ Add property
+                </button>
+</div>
+<div class="kpis">
+<div class="kpi">
+<small>
+                        Total views
+                    </small>
+<strong>
+                        1,284
+                    </strong>
+</div>
+<div class="kpi">
+<small>
+                        Favorites
+                    </small>
+<strong>
+                        86
+                    </strong>
+</div>
+<div class="kpi">
+<small>
+                        Active listings
+                    </small>
+<strong>
+                        6
+                    </strong>
+</div>
+<div class="kpi">
+<small>
+                        Viewing requests
+                    </small>
+<strong>
+                        12
+                    </strong>
+</div>
+</div>
+<div class="two">
+<div class="panel">
+<h3>
+                        Your listings
+                    </h3>
+<div class="row">
+<img alt="Property" src="AlphaHomes/image1.jpg"/>
+<div>
+<b>
+                                Modern 3-Bedroom Apartment
+                            </b>
+<p>
+                                Bole, Addis Ababa · $185,000
+                            </p>
+</div>
+<button>
+                            View
+                        </button>
+<button>
+                            Remove
+                        </button>
+</div>
+<div class="row">
+<img alt="Property" src="AlphaHomes/image2.jpg"/>
+<div>
+<b>
+                                Family House with Garden
+                            </b>
+<p>
+                                Summit, Addis Ababa · $265,000
+                            </p>
+</div>
+<button>
+                            View
+                        </button>
+<button>
+                            Remove
+                        </button>
+</div>
+</div>
+<div class="panel">
+<h3>
+                        Buyer activity
+                    </h3>
+<div class="row">
+<div class="avatar">
+                            AM
+                        </div>
+<div>
+<b>
+                                Abel M.
+                            </b>
+<p>
+                                Asked about parking and viewing availability.
+                            </p>
+</div>
+</div>
+<div class="row">
+<div class="avatar">
+                            SK
+                        </div>
+<div>
+<b>
+                                Selam K.
+                            </b>
+<p>
+                                Saved your apartment.
+                            </p>
+</div>
+</div>
+<div class="row">
+<div class="avatar">
+                            YD
+                        </div>
+<div>
+<b>
+                                Yonas D.
+                            </b>
+<p>
+                                Requested a Saturday viewing.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- COMPARE BAR -->
+<div id="comparebar">
+<span id="compareNum">
+            0
+        </span>
+
+        selected
+
+        <button>
+            Compare
+        </button>
+<button>
+            Clear
+        </button>
+</div>
+<!-- PROPERTY DETAILS -->
+<div id="detail">
+<div>
+<div>
+<h2>
+                    Property details
+                </h2><button>
+                    ×
+                </button>
+</div>
+<div id="detailBody">
+<img alt="Property" src="AlphaHomes/image1.jpg"/>
+<h2>
+                    $185,000
+                </h2>
+<p>
+                    📍 Bole, Addis Ababa
+                </p>
+<p>
+                    🛏 3 bedrooms · 🛁 2 bathrooms · ▦ 142 m²
+                </p>
+<p>
+                    Bright contemporary apartment with a spacious
+                    living area, modern kitchen, secure parking and balcony.
+                </p>
+
+<button>
+                    Contact seller
+                </button>
+<button>
+                    Save photo
+                </button>
+</div>
+</div>
+</div>
+<!-- ADD PROPERTY -->
+<div id="add">
+<div>
+<h2>
+                Add property
+            </h2>
+<form>
+<div>
+<label>
+                        Property title
+                    </label>
+<input placeholder="Modern 3-bedroom home" type="text"/>
+</div>
+<div>
+<label>
+                        Type
+                    </label>
+<select aria-label="Property type">
+<option>
+                            House
+                        </option>
+<option>
+                            Apartment
+                        </option>
+<option>
+                            Villa
+                        </option>
+</select>
+</div>
+<div>
+<label>
+                        Price
+                    </label>
+<input placeholder="$200,000" type="text"/>
+</div>
+<div>
+<label>
+                        Location
+                    </label>
+<input placeholder="Bole, Addis Ababa" type="text"/>
+</div>
+<div>
+<label>
+                        Bedrooms
+                    </label>
+<input aria-label="Bedrooms" type="number" value="3"/>
+</div>
+<div>
+<label>
+                        Bathrooms
+                    </label>
+<input aria-label="Bathrooms" type="number" value="2"/>
+</div>
+<div>
+<label>
+                        Description
+                    </label>
+<textarea placeholder="Describe the property..."></textarea>
+</div>
+<div>
+<label for="property-photos">
+                        Upload photos
+                    </label>
+<input accept="image/*" id="property-photos" multiple="" type="file"/>
+</div>
+<button type="submit">
+                    Publish property
+                </button>
+</form>
+</div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+<b>
+            Alpha
+        </b>
+<span>
+            Buy · Sell · Compare · Message
+        </span>
+<span>
+            © 2026
+        </span>
+</footer>
+<div id="auth">
+<div class="auth-box">
+<button aria-label="Close sign in" class="modal-close" id="authClose" type="button">×</button>
+<h2>Welcome</h2>
+<div><label>Email</label><input placeholder="you@example.com" type="email"/></div>
+<br/>
+<div><label>Password</label><input placeholder="••••••••" type="password"/></div>
+<br/>
+<button type="button">Sign in</button>
+<p>New user? <b>Create an account</b></p>
+</div>
+</div><div aria-hidden="true" class="settings-modal" id="settings">
+<section class="section settings-box">
+<button aria-label="Close settings" class="modal-close" id="settingsClose" type="button">×</button>
+<h2>Settings</h2>
+<p>Manage your account and marketplace preferences.</p>
+<div class="panel">
+<h3>Account</h3>
+<div class="field"><label>Full name</label><input placeholder="Your name" type="text"/></div>
+<br/>
+<div class="field"><label>Email</label><input placeholder="you@example.com" type="email"/></div>
+<br/>
+<div class="field"><label for="notification-preference">Notifications</label>
+<select id="notification-preference"><option>All notifications</option><option>Important updates only</option></select>
+</div>
+<br/>
+<button id="saveSettingsBtn" type="button">Save settings</button>
+</div>
+</section>
+</div><script defer="" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Message</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img alt="Alpha Realstate market place's logo" class="logo" height="10%" src="AlphaHomes/logo.png"
+                    width="5%" />
+                <h1>Alpha</h1>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="seller.html">Sell</a></li>
+                <li><a href="buyer.html">Buy</a></li>
+                <li><a href="message.html">Message</a></li>
+                <li class="auth-nav-item"><button class="nav-action" id="signInNavBtn" type="button">Sign in</button>
+                </li>
+                <li class="signup-nav-item"><button class="nav-action" id="signUpNavBtn" type="button">Sign up</button>
+                </li>
+                <li class="settings-nav-item"><button class="nav-action" id="settingsNavBtn"
+                        type="button">Settings</button></li>
+                <li><button aria-label="Toggle dark mode" class="theme-btn" id="themeBtn" type="button">
+                        🌙
+                    </button></li>
+            </ul>
+            <button class="menu-btn" id="menuBtn">☰</button>
+        </nav>
+        <div class="topic">
+            <img alt="Alpha Realstate market place's logo" class="logo" height="20%" src="AlphaHomes/logo.png"
+                width="20%" />
+            <h1>Real estate marketplace</h1>
+            <p>
+                Find a place that feels like yours.
+            </p>
+        </div>
+    </header>
+    <!-- MESSAGES -->
+    <main class="view active" id="messages">
+        <section class="section">
+            <div class="head">
+                <div>
+                    <h2>
+                        Messages
+                    </h2>
+                    <p>
+                        Talk with sellers or buyers before meeting in person.
+                    </p>
+                </div>
+            </div>
+            <div class="two">
+                <div class="panel">
+                    <h3>
+                        Conversations
+                    </h3>
+                    <div class="row">
+                        <div class="avatar">
+                            AM
+                        </div>
+                        <div>
+                            <b>
+                                Abel M.
+                            </b>
+                            <p>
+                                Is the apartment still available?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="avatar">
+                            SK
+                        </div>
+                        <div>
+                            <b>
+                                Selam K.
+                            </b>
+                            <p>
+                                Can I schedule a viewing?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <h3>
+                        Send message
+                    </h3>
+                    <label>
+                        Message
+                    </label>
+                    <textarea id="msg" placeholder="Write your message..."></textarea>
+                    <br /><br />
+                    <button>
+                        Send message
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+        <b>
+            Alpha
+        </b>
+        <span>
+            Buy · Sell · Compare · Message
+        </span>
+        <span>
+            © 2026
+        </span>
+    </footer>
+    <div id="auth">
+        <div class="auth-box">
+            <button aria-label="Close sign in" class="modal-close" id="authClose" type="button">×</button>
+            <h2>Welcome</h2>
+            <div><label>Email</label><input placeholder="you@example.com" type="email" /></div>
+            <br />
+            <div><label>Password</label><input placeholder="••••••••" type="password" /></div>
+            <br />
+            <button type="button">Sign in</button>
+            <p>New user? <b>Create an account</b></p>
+        </div>
+    </div>
+    <div aria-hidden="true" class="settings-modal" id="settings">
+        <section class="section settings-box">
+            <button aria-label="Close settings" class="modal-close" id="settingsClose" type="button">×</button>
+            <h2>Settings</h2>
+            <p>Manage your account and marketplace preferences.</p>
+            <div class="panel">
+                <h3>Account</h3>
+                <div class="field"><label>Full name</label><input placeholder="Your name" type="text" /></div>
+                <br />
+                <div class="field"><label>Email</label><input placeholder="you@example.com" type="email" /></div>
+                <br />
+                <div class="field"><label for="notification-preference">Notifications</label>
+                    <select id="notification-preference">
+                        <option>All notifications</option>
+                        <option>Important updates only</option>
+                    </select>
+                </div>
+                <br />
+                <button id="saveSettingsBtn" type="button">Save settings</button>
+            </div>
+        </section>
+    </div>
+    <script defer="" src="script.js"></script>
+</body>
+
+</html>
